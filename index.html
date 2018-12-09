@@ -1,0 +1,81 @@
+˜
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JQuery Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- link to stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+
+
+<body>
+    <div id="title">
+        <h1 id="gameName"></h1>
+    </div>
+
+    <!-- this div holds the instructions, it is the only div that 
+    does not contain jquery generated data due to the length and nature-->
+    <div id="instructions" class="container">
+        <h3>Instructions</h3>
+        <br>
+        <h5>At the start of each game</h5>
+        <ol>
+            <li>Bob's Winning Score between 19 and 120 will be generated</li>
+            <li>Linda, Tina, Gene and Louise are assigned a number between 1 and 12 (they may repeat)</li>
+        </ol>
+        <h5>Your Goal</h5>
+        <ol>
+            <li>Click on a character to add their hidden number value to your current score</li>
+            <li>You win if your score is equivalent to Bob's Score</li>
+            <li>If your score exceeds Bob's Score you lose and the game starts again</li>
+        </ol>
+    </div>
+
+    <!-- container div holds the game content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <p id="line">_________________</p>
+            </div>
+            <div class="col-md-3 bob">
+                <img src="assets/images/bob.png">
+            </div> <!-- end bob -->
+            <div class="col-md-3">
+                <div id="numToGuess"></div>
+            </div>
+            <div class="col-md-3">
+                <p id="line1">_________________</p>
+            </div>
+        </div> <!-- end row -->
+        <hr>
+        <div id="pictures"></div>
+        <div class="scores">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="userScore"></div>
+                </div>
+                <div class=col-md-4>
+                    <div id="numWins"></div>
+                </div>
+                <div class=col-md-4>
+                    <div id="numLosses"></div>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end scores -->
+    </div> <!-- end container -->
+</body>
+
+<!-- link to javascript files -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./assets/javascript/code.js"></script>
+
+</html>
