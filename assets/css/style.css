@@ -11,7 +11,7 @@ body {
     width: 60%;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: solid 15px red;
+    border: ridge 15px red;
 }
 
 .h1, h1 {
